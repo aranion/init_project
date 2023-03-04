@@ -36,7 +36,13 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm-run-all prettier eslint:fix"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "*.*": [
+      "yarn prettier && eslint:fix",
+      "git add"
+    ]
   }
 }
