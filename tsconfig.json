@@ -2,11 +2,7 @@
   "compilerOptions": {
     "target": "ESNext",
     "useDefineForClassFields": true,
-    "lib": [
-      "DOM",
-      "DOM.Iterable",
-      "ESNext"
-    ],
+    "lib": ["DOM", "DOM.Iterable", "ESNext"],
     "allowJs": false,
     "skipLibCheck": true,
     "esModuleInterop": false,
@@ -33,19 +29,11 @@
     "baseUrl": ".",
     "outDir": "dist",
     "paths": {
-      "*": [
-        "./src/*"
-      ]
+      "*": ["./src/*"]
     }
   },
-  "include": [
-    "src",
-    ".eslintrc.js"
-  ],
-  "exclude": [
-    "node_modules",
-    "dist"
-  ],
+  "include": ["src", ".eslintrc.js"],
+  "exclude": ["node_modules", "dist"],
   "ts-node": {
     "files": true
   }

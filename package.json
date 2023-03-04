@@ -35,7 +35,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm-run-all prettier eslint:fix",
+      "pre-commit": "./node_modules/.bin/npm-run-all prettier eslint:fix",
       "pre-push": ""
     }
   }
