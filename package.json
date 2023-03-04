@@ -8,7 +8,7 @@
     "eslint": "eslint .",
     "eslint:fix": "eslint . --fix",
     "prettier": "prettier -w .",
-    "begin": "yarn install && npx husky install"
+    "prepare": "husky install"
   },
   "engines": {
     "node": ">=18"
@@ -35,7 +35,7 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "./node_modules/.bin/npm-run-all prettier eslint:fix",
+      "pre-commit": "npm-run-all prettier eslint:fix",
       "pre-push": ""
     }
   }
