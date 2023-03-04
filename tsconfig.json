@@ -36,14 +36,15 @@
       "*": [
         "./src/*"
       ]
-    },
+    }
   },
   "include": [
-    "src"
+    "src",
+    ".eslintrc.js"
   ],
   "exclude": [
     "node_modules",
-    "dist",
+    "dist"
   ],
   "ts-node": {
     "files": true
