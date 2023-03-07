@@ -21,7 +21,7 @@ module.exports = {
     project: './tsconfig.json',
     tsconfigRootDir: __dirname,
   },
-  plugins: ['react', '@typescript-eslint', 'import', 'jsx-a11y', 'react', 'prettier'],
+  plugins: ['react', '@typescript-eslint', 'import', 'react', 'prettier'],
   rules: {
     quotes: ['error', 'single'],
     semi: ['error', 'never'],
@@ -47,15 +47,6 @@ module.exports = {
     'no-console': 'off',
     'no-param-reassign': 'off',
     'prefer-destructuring': 'off',
-    'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], specialLink: ['to'] }],
-    'jsx-a11y/label-has-for': [
-      2,
-      {
-        required: {
-          every: ['id'],
-        },
-      },
-    ],
     'prettier/prettier': ['error'],
     'import/prefer-default-export': 'off',
     'no-underscore-dangle': 'off',
