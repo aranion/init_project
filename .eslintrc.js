@@ -4,7 +4,14 @@ module.exports = {
     es2021: true,
     node: true,
   },
-  extends: ['eslint:recommended', 'plugin:react/recommended', 'plugin:@typescript-eslint/recommended', 'plugin:import/recommended', 'prettier'],
+  extends: [
+    'airbnb-typescript/base',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:import/recommended',
+    'plugin:prettier/recommended',
+    'prettier',
+  ],
   overrides: [],
   parser: '@typescript-eslint/parser',
   parserOptions: {
@@ -16,6 +23,10 @@ module.exports = {
   },
   plugins: ['react', '@typescript-eslint', 'import', 'jsx-a11y', 'react', 'prettier'],
   rules: {
+    quotes: ['error', 'single'],
+    semi: ['error', 'never'],
+    radix: 'off',
+    eqeqeq: 2,
     indent: [
       'error',
       2,
@@ -25,8 +36,6 @@ module.exports = {
       },
     ],
     'linebreak-style': ['error', 'unix'],
-    quotes: ['error', 'single'],
-    semi: ['error', 'never'],
     'arrow-parens': 'off',
     'object-curly-newline': 'off',
     'no-mixed-operators': 'off',
@@ -37,7 +46,6 @@ module.exports = {
     'max-len': ['error', 150, 2, { ignoreUrls: true }],
     'no-console': 'off',
     'no-param-reassign': 'off',
-    radix: 'off',
     'prefer-destructuring': 'off',
     'jsx-a11y/anchor-is-valid': ['error', { components: ['Link'], specialLink: ['to'] }],
     'jsx-a11y/label-has-for': [
@@ -72,7 +80,6 @@ module.exports = {
         exceptAfterSingleLine: true,
       },
     ],
-    eqeqeq: 2,
     'no-debugger': 'warn',
     'prefer-const': 'warn',
     'jsx-quotes': ['warn', 'prefer-single'],
