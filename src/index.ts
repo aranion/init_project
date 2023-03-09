@@ -1,4 +1,5 @@
-export const init = () => {
-  const vars = 'Test'
-  console.log(vars)
-}
+import './style.css'
+
+export const init = () => {}
+
+init()

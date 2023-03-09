@@ -1,16 +1,20 @@
 {
   "name": "init_project",
   "version": "1.0.0",
-  "description": "",
+  "description": "Стартовый проект TS",
   "main": "src/index.ts",
+  "type": "module",
   "scripts": {
-    "start": "",
+    "start": "node ./build/index.js",
+    "build": "tsc -p ./tsconfig.json",
+    "build:watch": "tsc -w -p ./tsconfig.json",
+    "build:release": "tsc -p ./tsconfig.release.json",
     "prepare": "husky install",
+    "prettier": "prettier -w .",
     "eslint": "eslint .",
     "eslint:fix": "eslint . --fix",
     "stylelint": "stylelint ./src/**/*{.css,.scss,.sass}",
-    "stylelint:fix": "stylelint ./src/**/*{.css,.scss,.sass} --fix",
-    "prettier:fix": "prettier -w ."
+    "stylelint:fix": "stylelint ./src/**/*{.css,.scss,.sass} --fix"
   },
   "engines": {
     "node": ">=18"
